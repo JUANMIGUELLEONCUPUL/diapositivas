@@ -1,8 +1,9 @@
 ---
-title: "Episodio 7"
 layout: post
-permalink: /demo/
+title: "Episodio 7"
+date: 2024-11-05
 ---
+
 
 <section>
   <h1>Medios de Transmision</h1>
