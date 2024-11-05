@@ -1,11 +1,11 @@
 ---
-title: averxd
+title: Why WebJeda Slides?
 layout: post
 permalink: /why/
 background: '#0a5'
 
 slides:
- - title: capitulo 10
+ - title: Why use webjeda slides?
    slide-data: Webjeda slides is built using revealjs. The idea is to keep all the slideshows in one place as posts. All your presentations can be accessed from one place!
     
  - title: Another reason to use webjeda slides    
