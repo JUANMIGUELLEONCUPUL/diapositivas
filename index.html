@@ -23,28 +23,41 @@ layout: compress
            <h1 class="headline">{{site.title}}</h1></div></a>
        </header>
        
-       <div class="pack">
-           <p class="head-text">JUAN MIGUEL LEON CUPUL</p>
 
-           <!-- Enlace actualizado a "episodio7.html" -->
-           <a target="_blank" class="link" href="{{site.baseurl}}/episodio7.html"> 
-               <div class="card" style="background-color:#e74c3c">
-                   <div class="card-number">1</div>
-                   <div class="card-title">Episodio 7</div>
-               </div>
-           </a>
-           
-           <a target="_blank" class="link" href="{{site.baseurl}}/capitulo10.html"> 
-               <div class="card" style="background-color:#e74c3c">
-                   <div class="card-number">2</div>
-                   <div class="card-title">Capítulo 10</div>
-               </div>
-           </a>
-           
-           {% for post in site.posts %}                              
-           {% endfor %}
-       </div>
        
-       {% include analytics.html %}
+       
+        <div class="pack">
+ 
+ <p class="head-text">Presentacion de los Capitulos 7 y 10, por Rafael Bello</p>
+ 
+ <a target="_blank" class="link" href="{{site.baseurl}}/episodio7.html"> 
+       
+	<div class="card" style="background-color:#e74c3c">
+	   <div class="card-number">
+		   1
+	   </div>
+		<div class="card-title">
+			capitulo 7
+		</div>
+	</div>
+</a>
+<a target="_blank" class="link" href="{{site.baseurl}}/capitulo10.html"> 
+       
+	<div class="card" style="background-color:#e74c3c">
+	   <div class="card-number">
+		  2
+	   </div>
+		<div class="card-title">
+			capitulo 10
+		</div>
+	</div>
+</a>
+{% for post in site.posts %}                              
+                               
+    
+          
+{% endfor %}
+        </div>
+         {% include analytics.html %}
     </body>
 </html>
