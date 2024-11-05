@@ -25,27 +25,29 @@ layout: compress
     <div class="pack">
         <p class="head-text">What if you can manage all your presentations from one place?!</p>
 
-        <!-- Presentación Episodio 7 -->
-        {% assign episodio7 = site.posts | where: "title", "Episodio 7" | first %}
-        {% if episodio7 %}
-            <a target="_blank" class="link" href="{{site.baseurl}}{{episodio7.url}}">
-                <div class="card" style="background-color: #e74c3c;">
-                    <div class="card-number">2</div>
-                    <div class="card-title">{{ episodio7.title }}</div>
-                </div>
-            </a>
-        {% endif %}
+        <!-- Presentación para Episodio 7 -->
+        {% for post in site.posts %}
+            {% if post.title == "Episodio 7" %}
+                <a target="_blank" class="link" href="{{site.baseurl}}{{post.url}}">
+                    <div class="card" style="background-color: #e74c3c;">
+                        <div class="card-number">2</div>
+                        <div class="card-title">{{ post.title }}</div>
+                    </div>
+                </a>
+            {% endif %}
+        {% endfor %}
 
-        <!-- Presentación Episodio 10 -->
-        {% assign episodio10 = site.posts | where: "title", "Episodio 10" | first %}
-        {% if episodio10 %}
-            <a target="_blank" class="link" href="{{site.baseurl}}{{episodio10.url}}">
-                <div class="card" style="background-color: #1abc9c;">
-                    <div class="card-number">1</div>
-                    <div class="card-title">{{ episodio10.title }}</div>
-                </div>
-            </a>
-        {% endif %}
+        <!-- Presentación para Episodio 10 -->
+        {% for post in site.posts %}
+            {% if post.title == "Episodio 10" %}
+                <a target="_blank" class="link" href="{{site.baseurl}}{{post.url}}">
+                    <div class="card" style="background-color: #1abc9c;">
+                        <div class="card-number">1</div>
+                        <div class="card-title">{{ post.title }}</div>
+                    </div>
+                </a>
+            {% endif %}
+        {% endfor %}
 
     </div>
     {% include analytics.html %}
