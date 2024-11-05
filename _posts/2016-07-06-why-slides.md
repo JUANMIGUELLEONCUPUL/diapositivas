@@ -1,5 +1,5 @@
 ---
-title: Episodio 7
+title: "Episodio 7"
 layout: post
 permalink: /demo/
 ---
