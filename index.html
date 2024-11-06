@@ -12,6 +12,28 @@ layout: compress
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="stylesheet" href="{{site.baseurl}}/css/home.css">
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico" />
+    <style>
+        /* Efecto hover para las imágenes de perfil */
+        .github-profile img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .github-profile img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Efecto hover para las tarjetas de episodio */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,31 +45,31 @@ layout: compress
         </a>
     </header>
     <div class="pack">
-        <p class="head-text">Bienvenido a los capitulos del libro Data Communications and Networking By Behrouz A.Forouzan </p>
+        <p class="head-text">Bienvenido a los capítulos del libro Data Communications and Networking By Behrouz A.Forouzan </p>
         <div style="display: flex; align-items: center;">
 
             <div style="display: flex; flex-direction: column; align-items: flex-start;">
 
                 <!-- Primera imagen y su leyenda -->
                 <div style="position: relative; margin-bottom: 20px;">
-                  <p style="position: fixed; bottom: 150px; left: 0; margin: 10px;">
+                  <p style="position: fixed; bottom: 150px; left: 0; margin: 10px;" class="github-profile">
                     <a href="https://github.com/tuxtter" target="_blank">
                       <img src="../diapositivas/images/cuentatux.png" alt="click para dirigirte a la cuenta de mi profesor" style="width: 150px; height: 150px;">
                     </a>
                   </p>
                   <p style="position: fixed; bottom: 200px; left: 170px; font-size: 18px;">Cuenta git hub
-                    del doctor de telecomunicaciones quien nos impartio este proyecto
+                    del doctor de telecomunicaciones quien nos impartió este proyecto
                   </p>
                 </div>
               
                 <!-- Segunda imagen y su leyenda -->
                 <div style="position: relative;">
-                  <p style="position: fixed; bottom: 0; left: 0; margin: 10px;">
+                  <p style="position: fixed; bottom: 0; left: 0; margin: 10px;" class="github-profile">
                     <a href="https://github.com/JUANMIGUELLEONCUPUL/diapositivas" target="_blank">
                       <img src="../diapositivas/images/micuenta.png" alt="click para dirigirte a mi cuenta de GitHub" style="width: 150px; height: 150px;">
                     </a>
                   </p>
-                  <p style="position: fixed; bottom: 50px; left: 170px; font-size: 18px;">Cuenta de estudiante quien realizo estas modificaciones de webJeda</p>
+                  <p style="position: fixed; bottom: 50px; left: 170px; font-size: 18px;">Cuenta de estudiante quien realizó estas modificaciones de WebJeda</p>
                 </div>
               
               </div>
