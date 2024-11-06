@@ -5,6 +5,30 @@ date: 2024-11-05
 ---
 
 
+<style>
+  /* Estilo para el fondo */
+  body {
+    background-image: url('https://media.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy.gif'); /* GIF de fondo de la Tierra desde Giphy */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white; /* Cambia el color del texto si es necesario para mejor visibilidad */
+  }
+
+  /* Estilo para las secciones para que tengan un fondo semi-transparente */
+  section {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Centrado de imágenes */
+  p[align="center"] img {
+    border: 2px solid white;
+    border-radius: 8px;
+  }
+</style>
 <section>
   <h1>Medios de Transmision</h1>
   <h2>Capitulo 7</h2>
